@@ -1,4 +1,5 @@
-<!-- VENA COFFEE CO. LUXURY DIGITAL MENU - GÖRSELSİZ SÜRÜM -->
+<!-- VENA COFFEE CO. LUXURY DIGITAL MENU - GÖRSELSİZ VE MOBİL UYUMLU SÜRÜM -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap');
@@ -13,6 +14,12 @@
         --vena-text: #2c2c2c;
         --vena-text-light: #777777;
         --vena-border: #eaeaea;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--vena-bg);
     }
 
     #vena-digital-menu {
@@ -276,7 +283,6 @@
         font-weight: 700;
     }
 
-    /* DESSERTS SPECIFIC */
     #vdm-dessert .vdm-item-desc, 
     #vdm-dessert .vdm-item-ingredients {
         text-align: left;
@@ -349,7 +355,7 @@
     .vdm-footer { text-align: center; padding: 30px 20px; font-size: 0.8rem; background-color: var(--vena-dark); color: rgba(255,255,255,0.6); }
     .vdm-footer-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--vena-mocha); margin-bottom: 10px; display: block; letter-spacing: 2px; }
 
-    /* RESPONSIVE */
+    /* --- RESPONSIVE KODLARI --- */
     @media (max-width: 768px) {
         #vena-digital-menu { padding-bottom: calc(75px + env(safe-area-inset-bottom, 0px)); }
         .vdm-header { padding: 65px 20px 40px; }
@@ -361,6 +367,7 @@
         .vdm-item-price { font-size: 1rem; }
         .vdm-split-layout { gap: 30px; }
         
+        /* Hızlı Menü Alt Sabitleme */
         .vdm-nav-wrapper { position: fixed; top: auto; bottom: 0; left: 0; right: 0; border-bottom: none; border-top: 1px solid var(--vena-border); box-shadow: 0 -4px 15px rgba(0,0,0,0.06); padding-bottom: env(safe-area-inset-bottom, 0px); background-color: rgba(255, 255, 255, 0.98); }
         .vdm-nav { justify-content: space-between; padding: 0 5px; }
         .vdm-nav a { flex: 1; padding: 12px 2px; font-size: 0.65rem; letter-spacing: 0; border-bottom: none; }
@@ -381,6 +388,7 @@
         .vdm-split-layout { gap: 25px; flex-direction: column; }
         .vdm-split-col { min-width: 100%; flex: 1 1 100%; }
         
+        /* Tüm Gridleri Tek Sütun (Mobilde) Yap */
         .vdm-grid-2col, .vdm-grid-3col { grid-template-columns: 1fr; gap: 20px; }
         
         .vdm-card-content { padding: 15px; }
@@ -887,7 +895,6 @@
             "title-ref": "Refreshments", "title-ext": "Extras", "title-pure-drinks": "Additive-Free Drinks", "item-water": "Water", "item-sparkling": "Sparkling Water", "item-gazoz": "Turkish Soda (Gazoz)", "item-imported": "Imported Drink", "item-pure-hibiscus": "Additive-Free Hibiscus Tea", "item-pure-greentea": "Additive-Free Green Tea", "item-shot": "Extra Shot", "item-syrup": "Syrups", "item-plantmilk": "Plant-based Milk", "item-honey": "Honey",
             "item-cookie": "Homemade Cookie", "desc-cookie": "Freshly baked homemade cookies in 5 different varieties.", "ing-cookie": "<b>Varieties:</b> Hazelnut, forest fruit, orange, cocoa, plain",
             "item-bites": "Energy Bites", "desc-bites": "Healthy and delicious small snacks to accompany your coffee.", "ing-bites": "<b>Ingredients:</b> Dates, nuts, oats",
-
             "footer-info": "Prices are valid as of 01.05.2026.",
             "footer-vat": "VAT is included in our prices.",
             "daily-note": "All our desserts arrive fresh daily to ensure the highest quality. When ordering, please consult our team for today's fresh selection; we would be delighted to help you choose the flavor that best suits your palate."
@@ -902,7 +909,6 @@
             "title-ref": "Erfrischungen", "title-ext": "Extras", "title-pure-drinks": "Zusatzstofffreie Getränke", "item-water": "Wasser", "item-sparkling": "Mineralwasser", "item-gazoz": "Türkische Limonade (Gazoz)", "item-imported": "Importgetränk", "item-pure-hibiscus": "Reiner Hibiskustee", "item-pure-greentea": "Reiner grüner Tee", "item-shot": "Extra Shot", "item-syrup": "Sirup", "item-plantmilk": "Pflanzenmilch", "item-honey": "Honig",
             "item-cookie": "Hausgemachter Keks", "desc-cookie": "Frisch gebackene hausgemachte Kekse in 5 Sorten.", "ing-cookie": "<b>Sorten:</b> Haselnuss, Waldfrucht, Orange, Kakao, Natur",
             "item-bites": "Energy Bites", "desc-bites": "Gesunde und leckere kleine Snacks zu Ihrem Kaffee.", "ing-bites": "<b>Zutaten:</b> Datteln, Nüsse, Hafer",
-
             "footer-info": "Preise gültig ab 01.05.2026.",
             "footer-vat": "Die gesetzliche Mehrwertsteuer ist in unseren Preisen enthalten.",
             "daily-note": "Alle unsere Desserts werden täglich frisch geliefert, um höchste Qualität zu garantieren. Bitte fragen Sie unser Team bei der Bestellung nach der heutigen frischen Auswahl; wir helfen Ihnen gerne dabei, den Geschmack zu finden, der am besten zu Ihnen passt."
@@ -917,7 +923,6 @@
             "title-ref": "Rafraîchissements", "title-ext": "Suppléments", "title-pure-drinks": "Boissons Sans Additifs", "item-water": "Eau", "item-sparkling": "Eau Gazeuse", "item-gazoz": "Soda Turc (Gazoz)", "item-imported": "Boisson Importée", "item-pure-hibiscus": "Thé Hibiscus Pur", "item-pure-greentea": "Thé Vert Pur", "item-shot": "Dose Suppl.", "item-syrup": "Sirops", "item-plantmilk": "Lait Végétal", "item-honey": "Miel",
             "item-cookie": "Cookie Maison", "desc-cookie": "Cookies maison fraîchement cuits en 5 variétés.", "ing-cookie": "<b>Variétés:</b> Noisette, fruits des bois, orange, cacao, nature",
             "item-bites": "Bouchées Énergie", "desc-bites": "De petites collations saines et délicieuses pour accompagner votre café.", "ing-bites": "<b>Ingrédients:</b> Dattes, noix, avoine",
-
             "footer-info": "Prix valables à partir du 01.05.2026.",
             "footer-vat": "La TVA est incluse dans nos prix.",
             "daily-note": "Tous nos desserts arrivent frais tous les jours pour garantir la meilleure qualité. Lors de votre commande, n'hésitez pas à demander à notre équipe la sélection fraîche du jour ; nous serons ravis de vous aider à choisir la saveur qui vous convient le mieux."
